@@ -8,7 +8,6 @@ def solution(X, A):
     already covered.
     We return the index when there are X elements in the dictionary.
     """
-    # count unique leaf positions and stop when there are enough
     leaves = {}
     for second in range(0, len(A)):
         leaves[A[second]] = True
