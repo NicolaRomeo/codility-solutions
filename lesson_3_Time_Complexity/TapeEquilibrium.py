@@ -1,9 +1,6 @@
 def solution(A):
 
-    '''
-    first we instantiate a minimal difference for comparison.
-    '''
-
+    #first we instantiate a minimal difference for comparison.
     assert len(A) > 1
     first_part = 0
     second_part = sum(A)
@@ -18,5 +15,6 @@ def solution(A):
         if min_diff is None or curr_diff < min_diff:
             min_diff = curr_diff
     return min_diff
+
 if __name__ == '__main__':
     print(solution([-1000, 1000]))
